@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFBEA30B2446AC720085B1C4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBEA30A2446AC720085B1C4 /* Home.storyboard */; };
+		CFBEA30D2446AFDB0085B1C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */; };
+		CFBEA30F2446B0F00085B1C4 /* Load.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBEA30E2446B0F00085B1C4 /* Load.storyboard */; };
 		CFD674A72446976700209CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674A62446976700209CAF /* AppDelegate.swift */; };
 		CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674A82446976700209CAF /* SceneDelegate.swift */; };
 		CFD674AB2446976700209CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674AA2446976700209CAF /* ViewController.swift */; };
 		CFD674AE2446976700209CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD674AC2446976700209CAF /* Main.storyboard */; };
 		CFD674B02446976800209CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD674AF2446976800209CAF /* Assets.xcassets */; };
 		CFD674B32446976800209CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD674B12446976800209CAF /* LaunchScreen.storyboard */; };
+		CFD674BB2446980E00209CAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFD674BA2446980E00209CAF /* GoogleService-Info.plist */; };
+		E115385B5AE043E0BF6F9C78 /* Pods_CatsGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.release.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.release.xcconfig"; sourceTree = "<group>"; };
+		923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.debug.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.debug.xcconfig"; sourceTree = "<group>"; };
+		CFBEA30A2446AC720085B1C4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFBEA30E2446B0F00085B1C4 /* Load.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Load.storyboard; sourceTree = "<group>"; };
 		CFD674A32446976700209CAF /* CatsGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD674A62446976700209CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD674A82446976700209CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,7 @@
 		CFD674AF2446976800209CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD674B22446976800209CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD674B42446976800209CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD674BA2446980E00209CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E115385B5AE043E0BF6F9C78 /* Pods_CatsGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11E481A26C41D476DD1F6695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73F8E271F087664ACA4E768B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */,
+				7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CFD6749A2446976700209CAF = {
 			isa = PBXGroup;
 			children = (
 				CFD674A52446976700209CAF /* CatsGram */,
 				CFD674A42446976700209CAF /* Products */,
+				73F8E271F087664ACA4E768B /* Pods */,
+				11E481A26C41D476DD1F6695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +95,10 @@
 				CFD674AF2446976800209CAF /* Assets.xcassets */,
 				CFD674B12446976800209CAF /* LaunchScreen.storyboard */,
 				CFD674B42446976800209CAF /* Info.plist */,
+				CFD674BA2446980E00209CAF /* GoogleService-Info.plist */,
+				CFBEA30A2446AC720085B1C4 /* Home.storyboard */,
+				CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */,
+				CFBEA30E2446B0F00085B1C4 /* Load.storyboard */,
 			);
 			path = CatsGram;
 			sourceTree = "<group>";
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFD674B72446976800209CAF /* Build configuration list for PBXNativeTarget "CatsGram" */;
 			buildPhases = (
+				B8FDD8FEF0A9A2A5F40E58F7 /* [CP] Check Pods Manifest.lock */,
 				CFD6749F2446976700209CAF /* Sources */,
 				CFD674A02446976700209CAF /* Frameworks */,
 				CFD674A12446976700209CAF /* Resources */,
+				95A86D45F46F2D7B25A21229 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +163,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBEA30F2446B0F00085B1C4 /* Load.storyboard in Resources */,
 				CFD674B32446976800209CAF /* LaunchScreen.storyboard in Resources */,
+				CFBEA30B2446AC720085B1C4 /* Home.storyboard in Resources */,
+				CFD674BB2446980E00209CAF /* GoogleService-Info.plist in Resources */,
 				CFD674B02446976800209CAF /* Assets.xcassets in Resources */,
 				CFD674AE2446976700209CAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95A86D45F46F2D7B25A21229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatsGram/Pods-CatsGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatsGram/Pods-CatsGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatsGram/Pods-CatsGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FDD8FEF0A9A2A5F40E58F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatsGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFD6749F2446976700209CAF /* Sources */ = {
@@ -141,6 +224,7 @@
 				CFD674AB2446976700209CAF /* ViewController.swift in Sources */,
 				CFD674A72446976700209CAF /* AppDelegate.swift in Sources */,
 				CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */,
+				CFBEA30D2446AFDB0085B1C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +366,7 @@
 		};
 		CFD674B82446976800209CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		CFD674B92446976800209CAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>575854613119-i9fgdl6cnt0cjt486q82ivefimo64vrv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.575854613119-i9fgdl6cnt0cjt486q82ivefimo64vrv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8bnj7cch9djjB9IdKVqSSTF4VoYrB07Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>575854613119</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.javiercueto.CatsGram</string>
+	<key>PROJECT_ID</key>
+	<string>catsgramca</string>
+	<key>STORAGE_BUCKET</key>
+	<string>catsgramca.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:575854613119:ios:a9566fe3105a5d064e254a</string>
+	<key>DATABASE_URL</key>
+	<string>https://catsgramca.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +16,29 @@ class ViewController: UIViewController {
     }
 
 
+    
+    @IBAction func SignInClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toHomeVC", sender: nil)
+    }
+    
+    
+    @IBAction func SignUpClicked(_ sender: Any) {
+    }
+    
+    @IBAction func HelpClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toHelpVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toHelpVC" {
+            let helpVC = segue.destination
+            helpVC.popoverPresentationController?.delegate = self
+        }
+    }
+    
+    // to show like a modal inside of the view
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
+    }
 }
 

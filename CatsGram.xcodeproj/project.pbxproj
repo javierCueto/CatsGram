@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFA8B0BF2447EACB00E135FC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA8B0BE2447EACB00E135FC /* Settings.storyboard */; };
+		CFA8B0C12447EC1700E135FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */; };
+		CFA8B0C32447EC2700E135FC /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8B0C22447EC2700E135FC /* UploadViewController.swift */; };
 		CFBEA30B2446AC720085B1C4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBEA30A2446AC720085B1C4 /* Home.storyboard */; };
 		CFBEA30D2446AFDB0085B1C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */; };
-		CFBEA30F2446B0F00085B1C4 /* Load.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBEA30E2446B0F00085B1C4 /* Load.storyboard */; };
+		CFBEA30F2446B0F00085B1C4 /* Upload.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBEA30E2446B0F00085B1C4 /* Upload.storyboard */; };
 		CFD674A72446976700209CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674A62446976700209CAF /* AppDelegate.swift */; };
 		CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674A82446976700209CAF /* SceneDelegate.swift */; };
 		CFD674AB2446976700209CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD674AA2446976700209CAF /* ViewController.swift */; };
@@ -24,9 +27,12 @@
 		52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.release.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.release.xcconfig"; sourceTree = "<group>"; };
 		923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.debug.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA8B0BE2447EACB00E135FC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CFA8B0C22447EC2700E135FC /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		CFBEA30A2446AC720085B1C4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CFBEA30E2446B0F00085B1C4 /* Load.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Load.storyboard; sourceTree = "<group>"; };
+		CFBEA30E2446B0F00085B1C4 /* Upload.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Upload.storyboard; sourceTree = "<group>"; };
 		CFD674A32446976700209CAF /* CatsGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD674A62446976700209CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD674A82446976700209CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +104,10 @@
 				CFD674BA2446980E00209CAF /* GoogleService-Info.plist */,
 				CFBEA30A2446AC720085B1C4 /* Home.storyboard */,
 				CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */,
-				CFBEA30E2446B0F00085B1C4 /* Load.storyboard */,
+				CFBEA30E2446B0F00085B1C4 /* Upload.storyboard */,
+				CFA8B0BE2447EACB00E135FC /* Settings.storyboard */,
+				CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */,
+				CFA8B0C22447EC2700E135FC /* UploadViewController.swift */,
 			);
 			path = CatsGram;
 			sourceTree = "<group>";
@@ -163,12 +172,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBEA30F2446B0F00085B1C4 /* Load.storyboard in Resources */,
+				CFBEA30F2446B0F00085B1C4 /* Upload.storyboard in Resources */,
 				CFD674B32446976800209CAF /* LaunchScreen.storyboard in Resources */,
 				CFBEA30B2446AC720085B1C4 /* Home.storyboard in Resources */,
 				CFD674BB2446980E00209CAF /* GoogleService-Info.plist in Resources */,
 				CFD674B02446976800209CAF /* Assets.xcassets in Resources */,
 				CFD674AE2446976700209CAF /* Main.storyboard in Resources */,
+				CFA8B0BF2447EACB00E135FC /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD674AB2446976700209CAF /* ViewController.swift in Sources */,
+				CFA8B0C32447EC2700E135FC /* UploadViewController.swift in Sources */,
 				CFD674A72446976700209CAF /* AppDelegate.swift in Sources */,
 				CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */,
+				CFA8B0C12447EC1700E135FC /* SettingsViewController.swift in Sources */,
 				CFBEA30D2446AFDB0085B1C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

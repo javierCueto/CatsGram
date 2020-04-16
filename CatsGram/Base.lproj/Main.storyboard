@@ -77,22 +77,30 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="UEx-bq-JNg">
+                                <rect key="frame" x="189" y="420" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="FwZ-sI-Va2" id="Fpp-Zr-XSz"/>
+                        <outlet property="indicatorActivity" destination="UEx-bq-JNg" id="vGi-kC-ZbU"/>
+                        <outlet property="passwordText" destination="tgw-J4-v2C" id="3bL-s9-82v"/>
                         <segue destination="3z2-it-tZQ" kind="presentation" identifier="toHomeVC" modalPresentationStyle="fullScreen" id="q3t-fy-5Sg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="-31"/>
+            <point key="canvasLocation" x="-317.39130434782612" y="-31.473214285714285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fJa-1v-bZG">
             <objects>
-                <tabBarController id="3z2-it-tZQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="3z2-it-tZQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LZB-Z6-INP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jFD-3l-Uf8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -102,6 +110,7 @@
                     <connections>
                         <segue destination="hFt-9z-p6g" kind="relationship" relationship="viewControllers" id="TOq-dg-7qk"/>
                         <segue destination="Z01-Bf-KEq" kind="relationship" relationship="viewControllers" id="irB-ih-ybX"/>
+                        <segue destination="MXC-Je-BN2" kind="relationship" relationship="viewControllers" id="ZZT-yo-q5d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddD-y5-2bZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -119,10 +128,20 @@
             </objects>
             <point key="canvasLocation" x="1820" y="-139"/>
         </scene>
-        <!--Load-->
+        <!--Settings-->
+        <scene sceneID="IcM-9b-43F">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="MXC-Je-BN2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PSA-Rb-y0D"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AR-pa-9TI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="-27"/>
+        </scene>
+        <!--Upload-->
         <scene sceneID="2Of-gt-H01">
             <objects>
-                <viewControllerPlaceholder storyboardName="Load" id="Z01-Bf-KEq" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Upload" id="Z01-Bf-KEq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SXP-Ik-Iyu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obw-A2-SWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

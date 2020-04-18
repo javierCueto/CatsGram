@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF3D6A5C244B8628007FF699 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6A5A244B8628007FF699 /* CatTableViewCell.swift */; };
+		CF3D6A5D244B8628007FF699 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF3D6A5B244B8628007FF699 /* CatTableViewCell.xib */; };
 		CF6D7CE5244B6091006ECCE2 /* CellHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D7CE4244B6091006ECCE2 /* CellHome.swift */; };
 		CF6D7CEC244B763F006ECCE2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D7CEB244B763F006ECCE2 /* Post.swift */; };
 		CFA8B0BF2447EACB00E135FC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA8B0BE2447EACB00E135FC /* Settings.storyboard */; };
@@ -29,6 +31,8 @@
 		52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.release.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.release.xcconfig"; sourceTree = "<group>"; };
 		923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.debug.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3D6A5A244B8628007FF699 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
+		CF3D6A5B244B8628007FF699 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
 		CF6D7CE4244B6091006ECCE2 /* CellHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHome.swift; sourceTree = "<group>"; };
 		CF6D7CEB244B763F006ECCE2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CFA8B0BE2447EACB00E135FC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				CF6D7CE4244B6091006ECCE2 /* CellHome.swift */,
 				CFA8B0C22447EC2700E135FC /* UploadViewController.swift */,
 				CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */,
+				CF3D6A5A244B8628007FF699 /* CatTableViewCell.swift */,
+				CF3D6A5B244B8628007FF699 /* CatTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3D6A5D244B8628007FF699 /* CatTableViewCell.xib in Resources */,
 				CFBEA30F2446B0F00085B1C4 /* Upload.storyboard in Resources */,
 				CFD674B32446976800209CAF /* LaunchScreen.storyboard in Resources */,
 				CFBEA30B2446AC720085B1C4 /* Home.storyboard in Resources */,
@@ -284,6 +291,7 @@
 				CFD674A72446976700209CAF /* AppDelegate.swift in Sources */,
 				CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */,
 				CFA8B0C12447EC1700E135FC /* SettingsViewController.swift in Sources */,
+				CF3D6A5C244B8628007FF699 /* CatTableViewCell.swift in Sources */,
 				CFBEA30D2446AFDB0085B1C4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -63,15 +63,19 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                             
                             let firesoreDatabase = Firestore.firestore()
                             
-                            var firestoreReference : DocumentReference? = nil
+                            //var firestoreReference : DocumentReference? = nil
                             
-                            let firestorePost = ["imageUrl" : imageUrl!, "postedBy" : Auth.auth().currentUser!.email!, "postComment" : self.commentText.text!, "date" : "date", "like" : 0] as [String : Any]
+                            let firestorePost = ["imageUrl" : imageUrl!, "postedBy" : Auth.auth().currentUser!.email!, "postComment" : self.commentText.text!, "date" : FieldValue.serverTimestamp(), "like" : 0] as [String : Any]
                             
-                            firestoreReference = firesoreDatabase.collection("Posts").addDocument(data: firestorePost, completion: { (error) in
+                             firesoreDatabase.collection("Posts").addDocument(data: firestorePost, completion: { (error) in
                                 if  let safeError =  error  {
                                     self.makeAlert(titleInput: "Error", messageInput: safeError.localizedDescription)
                                 }else{
-                                    self.makeAlert(titleInput: "Succes", messageInput: "All data are saved")
+                                    //move to another tabBar
+                                    self.imageView.image = UIImage(named: "noImageUploaded")
+                                    self.commentText.text = ""
+                                    self.tabBarController?.selectedIndex = 0
+                                    //self.makeAlert(titleInput: "Succes", messageInput: "All data are saved")
                                 }
                             })
                             

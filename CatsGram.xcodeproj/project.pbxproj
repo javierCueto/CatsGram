@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF6D7CE5244B6091006ECCE2 /* CellHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D7CE4244B6091006ECCE2 /* CellHome.swift */; };
+		CF6D7CEC244B763F006ECCE2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D7CEB244B763F006ECCE2 /* Post.swift */; };
 		CFA8B0BF2447EACB00E135FC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA8B0BE2447EACB00E135FC /* Settings.storyboard */; };
 		CFA8B0C12447EC1700E135FC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */; };
 		CFA8B0C32447EC2700E135FC /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8B0C22447EC2700E135FC /* UploadViewController.swift */; };
@@ -27,6 +29,8 @@
 		52D3134601CEDA11F35F2681 /* Pods_CatsGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E73BA117BDD1C76F8E66C63 /* Pods-CatsGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.release.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.release.xcconfig"; sourceTree = "<group>"; };
 		923C6F405DA84CEB8C53CE6A /* Pods-CatsGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsGram.debug.xcconfig"; path = "Target Support Files/Pods-CatsGram/Pods-CatsGram.debug.xcconfig"; sourceTree = "<group>"; };
+		CF6D7CE4244B6091006ECCE2 /* CellHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHome.swift; sourceTree = "<group>"; };
+		CF6D7CEB244B763F006ECCE2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CFA8B0BE2447EACB00E135FC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CFA8B0C22447EC2700E135FC /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,55 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CF6D7CE6244B625F006ECCE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFBEA30A2446AC720085B1C4 /* Home.storyboard */,
+				CFD674B12446976800209CAF /* LaunchScreen.storyboard */,
+				CFA8B0BE2447EACB00E135FC /* Settings.storyboard */,
+				CFD674AC2446976700209CAF /* Main.storyboard */,
+				CFBEA30E2446B0F00085B1C4 /* Upload.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF6D7CE7244B6267006ECCE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD674AA2446976700209CAF /* ViewController.swift */,
+				CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */,
+				CF6D7CE4244B6091006ECCE2 /* CellHome.swift */,
+				CFA8B0C22447EC2700E135FC /* UploadViewController.swift */,
+				CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF6D7CE8244B6271006ECCE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D7CEB244B763F006ECCE2 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF6D7CE9244B627A006ECCE2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CFD674AF2446976800209CAF /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CF6D7CEA244B62B6006ECCE2 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				CFD674A62446976700209CAF /* AppDelegate.swift */,
+				CFD674A82446976700209CAF /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		CFD6749A2446976700209CAF = {
 			isa = PBXGroup;
 			children = (
@@ -94,20 +147,13 @@
 		CFD674A52446976700209CAF /* CatsGram */ = {
 			isa = PBXGroup;
 			children = (
-				CFD674A62446976700209CAF /* AppDelegate.swift */,
-				CFD674A82446976700209CAF /* SceneDelegate.swift */,
-				CFD674AA2446976700209CAF /* ViewController.swift */,
-				CFD674AC2446976700209CAF /* Main.storyboard */,
-				CFD674AF2446976800209CAF /* Assets.xcassets */,
-				CFD674B12446976800209CAF /* LaunchScreen.storyboard */,
+				CF6D7CEA244B62B6006ECCE2 /* System */,
+				CF6D7CE9244B627A006ECCE2 /* Sources */,
+				CF6D7CE8244B6271006ECCE2 /* Models */,
+				CF6D7CE7244B6267006ECCE2 /* Controllers */,
+				CF6D7CE6244B625F006ECCE2 /* Views */,
 				CFD674B42446976800209CAF /* Info.plist */,
 				CFD674BA2446980E00209CAF /* GoogleService-Info.plist */,
-				CFBEA30A2446AC720085B1C4 /* Home.storyboard */,
-				CFBEA30C2446AFDB0085B1C4 /* HomeViewController.swift */,
-				CFBEA30E2446B0F00085B1C4 /* Upload.storyboard */,
-				CFA8B0BE2447EACB00E135FC /* Settings.storyboard */,
-				CFA8B0C02447EC1700E135FC /* SettingsViewController.swift */,
-				CFA8B0C22447EC2700E135FC /* UploadViewController.swift */,
 			);
 			path = CatsGram;
 			sourceTree = "<group>";
@@ -233,6 +279,8 @@
 			files = (
 				CFD674AB2446976700209CAF /* ViewController.swift in Sources */,
 				CFA8B0C32447EC2700E135FC /* UploadViewController.swift in Sources */,
+				CF6D7CE5244B6091006ECCE2 /* CellHome.swift in Sources */,
+				CF6D7CEC244B763F006ECCE2 /* Post.swift in Sources */,
 				CFD674A72446976700209CAF /* AppDelegate.swift in Sources */,
 				CFD674A92446976700209CAF /* SceneDelegate.swift in Sources */,
 				CFA8B0C12447EC1700E135FC /* SettingsViewController.swift in Sources */,

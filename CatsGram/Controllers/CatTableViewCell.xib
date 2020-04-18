@@ -43,7 +43,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-0h-2Id">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="likeButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1aj-n5-QO8"/>
+                                        </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytB-sd-SQT">
+                                        <rect key="frame" x="46" y="0.0" width="0.0" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0I-Om-Vki">
                                         <rect key="frame" x="387" y="0.0" width="42" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -71,6 +80,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="commentLabel" destination="Fbk-3F-Ts1" id="vts-7T-fnt"/>
+                <outlet property="idPostLabel" destination="ytB-sd-SQT" id="nBv-pA-MEZ"/>
                 <outlet property="likeButton" destination="hb4-0h-2Id" id="1XQ-uo-drK"/>
                 <outlet property="likeLabel" destination="f0I-Om-Vki" id="UI1-ft-dYN"/>
                 <outlet property="tableImageView" destination="1hy-wm-L9g" id="OHj-CV-ymx"/>

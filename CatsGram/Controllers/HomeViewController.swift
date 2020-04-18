@@ -41,7 +41,7 @@ extension HomeViewController: UITableViewDataSource{
         if let cell = cell as? CatTableViewCell{
             cell.userNameEmail.text = postsTable[indexPath.row].postedBy
             cell.tableImageView.sd_setImage(with: URL(string: postsTable[indexPath.row].imageUrl), completed: nil)
-            
+            cell.idPostLabel.text = postsTable[indexPath.row].id
             
             cell.commentLabel.text = postsTable[indexPath.row].postComment
             
@@ -55,7 +55,7 @@ extension HomeViewController: UITableViewDataSource{
     func getDataFromFirestore(){
         let firestoreDataBase = Firestore.firestore()
 
-        firestoreDataBase.collection("Posts").addSnapshotListener { (snapshot, error) in
+        firestoreDataBase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { (snapshot, error) in
             if let safeSnapshot = snapshot {
                 
                 if safeSnapshot.documents.count > 0 {

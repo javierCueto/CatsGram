@@ -15,6 +15,7 @@ class CellHome: UITableViewCell {
     @IBOutlet weak var commentText: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeLabel: UILabel!
+    //let id = String()
     
     override func awakeFromNib() {
         super.awakeFromNib()
